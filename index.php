@@ -104,6 +104,7 @@ function hyphenBetween($num1, $num2)
     }
 }
 echo "<br>";
+
 print_r(hyphenBetween(1, 10));
 
 
