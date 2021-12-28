@@ -92,3 +92,13 @@ function sumOfIntegers($num1, $num2)
 }
 echo "<br>";
 print_r(sumOfIntegers(0, 30));
+
+
+function firstWord($sentence)
+{
+
+    $sentence = explode(" ", $sentence);
+    return  $sentence[0];
+}
+echo "<br>";
+print_r(firstWord('hello world'));
