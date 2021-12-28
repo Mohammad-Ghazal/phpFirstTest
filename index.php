@@ -102,3 +102,15 @@ function firstWord($sentence)
 }
 echo "<br>";
 print_r(firstWord('hello world'));
+
+
+
+function printLetters()
+{
+    for ($x = ord('a'); $x <= ord('z'); $x++) {
+        echo chr($x);
+        echo " ";
+    }
+}
+echo "<br>";
+printLetters();
