@@ -77,3 +77,18 @@ print_r(isLeap(2000)); // => true
 print_r(isLeap(1603)); // => false
 print_r(isLeap(2004)); // => true
 print_r(isLeap(2021)); // => false
+
+
+
+
+function sumOfIntegers($num1, $num2)
+{
+    $sum = 0;
+    for ($counter = $num1; $counter <= $num2; $counter++) {
+        $sum += $counter;
+    }
+
+    return $sum;
+}
+echo "<br>";
+print_r(sumOfIntegers(0, 30));
