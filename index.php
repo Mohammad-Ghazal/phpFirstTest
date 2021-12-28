@@ -28,4 +28,16 @@ function insertIntoArray($item, $array, $index)
     return $array;
 }
 echo "<br>";
-print_r(insertIntoArray('apple',['banana','orange'],2));
+print_r(insertIntoArray('apple', ['banana', 'orange'], 2));
+
+
+
+
+function naturalOrdering($array)
+{
+     sort($array, SORT_NATURAL);
+     return $array;
+} 
+echo "<br>";
+$numbers = [1, 20, 3, 2];
+print_r( naturalOrdering($numbers));
