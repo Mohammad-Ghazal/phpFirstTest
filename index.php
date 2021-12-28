@@ -94,6 +94,20 @@ echo "<br>";
 print_r(sumOfIntegers(0, 30));
 
 
+
+function hyphenBetween($num1, $num2)
+{
+    print_r($num1);
+    for ($counter = $num1 + 1; $counter <= $num2; $counter++) {
+        echo "-";
+        print_r($counter);
+    }
+}
+echo "<br>";
+print_r(hyphenBetween(1, 10));
+
+
+
 function firstWord($sentence)
 {
 
