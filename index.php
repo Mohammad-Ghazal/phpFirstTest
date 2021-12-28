@@ -35,9 +35,25 @@ print_r(insertIntoArray('apple', ['banana', 'orange'], 2));
 
 function naturalOrdering($array)
 {
-     sort($array, SORT_NATURAL);
-     return $array;
-} 
+    sort($array, SORT_NATURAL);
+    return $array;
+}
 echo "<br>";
 $numbers = [1, 20, 3, 2];
-print_r( naturalOrdering($numbers));
+print_r(naturalOrdering($numbers));
+
+
+
+function largestNumber($num1, $num2, $num3)
+{
+    $array = [$num2, $num3];
+    $largest = $num1;
+    for ($index = 0; $index < 2; $index++) {
+        if ($largest < $array[$index])
+            $largest = $array[$index];
+    }
+
+    return $largest;
+}
+echo "<br>";
+print_r(largestNumber(1, 20, 3));
