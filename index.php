@@ -21,3 +21,11 @@ print_r(strrev('hello'));
 
 
 
+function insertIntoArray($item, $array, $index)
+{
+
+    $array[$index] = $item;
+    return $array;
+}
+echo "<br>";
+print_r(insertIntoArray('apple',['banana','orange'],2));
