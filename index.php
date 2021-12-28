@@ -57,3 +57,23 @@ function largestNumber($num1, $num2, $num3)
 }
 echo "<br>";
 print_r(largestNumber(1, 20, 3));
+
+
+function isLeap($year)
+{
+    echo " ";
+    // || year % 100 !== 0 || year % 400 === 0)
+    if ($year % 4 !== 0)
+        return "false";
+    else if ($year % 100 !== 0)
+        return "true";
+    else if ($year % 400 !== 0)
+        return "false";
+    else return "true";
+};
+
+echo "<br>";
+print_r(isLeap(2000)); // => true
+print_r(isLeap(1603)); // => false
+print_r(isLeap(2004)); // => true
+print_r(isLeap(2021)); // => false
